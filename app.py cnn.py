@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load trained model
-model = tf.keras.models.load_model("cnn_model.h5")
+model = tf.keras.models.load_model("cnn_model.keras")
 
 st.title("🐱🐶 CNN Image Classification App")
 st.write("Upload an image to classify as Cat or Dog")
@@ -25,3 +25,4 @@ if uploaded_file is not None:
         st.success("Prediction: 🐶 Dog")
     else:
         st.success("Prediction: 🐱 Cat")
+
